@@ -13,6 +13,7 @@ plot_glaciation_biomes|stem|172cb6641846bd0f|cc285adcce8c259f|2c530c1562a7fbd1|2
 biomes_glaciation_model|stem|77d69aa3736d9662|11682e51e4c17fab|4496cf11ebb20377|-61360770||t20749.5249622972s|s14250b|14250|rds|local|vector|||0||
 results_model|stem|0c1e9d9618d903e3|e61d45f352d4b1e0|9c16959cdaab50c1|-1956300892||t20749.5249639509s|s412b|412|rds|local|vector|||0.08||
 map_biomes_glaciation|stem|c911d978f3f2da63|55111756512a9245|d000b23977db7011|1324954290||t20749.5309437704s|s162075806b|162075806|rds|local|vector|||0.34||
+barplot|stem|1c43f1ba8cde70b1|0d98ca7bae7ea4f1|61de550e45c75f9a|-2023799663||t20749.5839745943s|s367180b|367180|rds|local|vector|||0.13||
 load_coordinates|function|236c360689160551
 assign_biomes|function|613e5b767fcf802a
 access_glaciation|function|ebb2fb24502a8a59
@@ -20,5 +21,4 @@ summarize_model|function|b32c59dbffd6789b
 fit_glaciation_model|function|bd66342cc6ae205f
 plot_glaciation_model|function|588f0c43b32d4f9d
 plot_biomes_glaciation|function|d069d08a692be001
-barplot|stem|1c43f1ba8cde70b1|0d98ca7bae7ea4f1|61de550e45c75f9a|-2023799663||t20749.5839745943s|s367180b|367180|rds|local|vector|||0.13||
-manuscript|stem|97344d9d174c0796|7033b830dc219e92|f9db829e90aaff2b|-1793997187|biomes_glaciation_quarto.html*biomes_glaciation_quarto_files*biomes_glaciation_quarto.qmd|t20749.5842035118s|s992269b|992269|file|local|vector|||17.09||
+manuscript|stem|5a33013240a4768b|7033b830dc219e92|f9db829e90aaff2b|-1793997187|biomes_glaciation_quarto.html*biomes_glaciation_quarto_files*biomes_glaciation_quarto.qmd|t20749.6031669208s|s992703b|992703|file|local|vector|||20.77||

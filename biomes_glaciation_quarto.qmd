@@ -3,6 +3,7 @@ title: "OS_exercise"
 format: html
 date: today
 editor: visual
+bibliography: references.bib
 execute: 
   echo: false
 ---
@@ -18,20 +19,19 @@ library(targets)
 tar_load(coordinates)
 ```
 
-In this study, we accessed `r nrow(coordinates)` target regions across the major mountain regions across the world. These target regions can be characterized into biomes, i.e., prevailing climatic conditions, such as arid, temperate, cold and polar regions. However, climatic conditions have been changing over time and so did glacial extents. Here, we want to find out, whether there is a correlation between glacial extent during the LGM and biomes we can find today.
+In this study, we accessed `r nrow(coordinates)` target regions across the major mountain regions across the world. These target regions can be characterized into biomes, i.e., prevailing climatic conditions, such as arid, temperate, cold and polar regions. However, climatic conditions have been changing over time and so did glacial extents. Here, we want to find out, whether there is a correlation between glacial extent during the LGM and biomes we can find today. @
 
 # Methods
 
 ## Field methods
 
-Target region coordinates were sampled in turn of the long term monitoring project GLORIA. In the following, biome information was extracted for each target region according to the Köppen-Geiger classification using the biomes package () and merged into four major categories, i.e., arid, temperate, cold and polar. Additionally, glaciation of each target region (yes/no) was accessed using the glacial extent during LGM from the GLACIMONTIS database ( et al, 2026).
+Target region coordinates were sampled in turn of the long term monitoring project GLORIA @. In the following, biome information was extracted for each target region according to the Köppen-Geiger classification using the biomes package @ and merged into four major categories, i.e., arid, temperate, cold and polar. Additionally, glaciation of each target region (yes/no) was accessed using the glacial extent during LGM from the GLACIMONTIS database @.
 
 ## Data Analysis
 
-## Results
+For statistical analysis, we run a generalized linear model with the formula glaciation (yes/no) \~ biomes, using a binomial function. All analysis were done in R @
 
-```{}
-```
+## Results
 
 ```{r}
 #| label: worldmap
@@ -41,5 +41,7 @@ tar_read(map_biomes_glaciation)
 #| label: barplot
 tar_read(barplot)
 ```
+
+There has been no evidence for a correlation between glaciation of a target region during LGM and present biomes. However, correlation seems to differ between biomes.
 
 ## References
