@@ -1,0 +1,24 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+coordinates_path|stem|f3165d5a7fb26583|5bd99f0b9c3cdf29|2c530c1562a7fbd1|185722418|C:/Users/mofal/Desktop/OS_exercise/data/GLORIA_mid_coordinates.csv|t20733.4165185695s|s19250b|19250|file|local|vector|||0.91||
+coordinates|stem|d7a453a006473568|66d039d4e267d8a7|9d733b3030a4b1a9|-1806016366||t20749.4961089345s|s6050b|6050|rds|local|vector|||0.19||
+lgm_path|stem|2002d1bb977b7346|95ce335ae7212e4d|2c530c1562a7fbd1|2010546502|C:/Users/mofal/Desktop/OS_exercise/data/LGM_glaciated_extent_combined.shp|t20731.5297313524s|s33757360b|33757360|file|local|vector|||4.07||
+lgm_extent|stem|2365236128fce28e|5c66b94db5134756|a2f8da4af48b9126|1400308652||t20749.5024292822s|s26153324b|26153324|rds|local|vector|||0.65||
+access_area_glaciated|function|25dfd4a9c6183a52
+area_glaciated|stem||da2163f54b57694e|501ce37c328ad8e2|1084483309||t20749.5068924963s||0|rds|local|vector|||1.33||Loop 5070 is not valid: Edge 9 crosses edge 12
+glaciated_yes_no|stem|483b5dd393a7872e|da2163f54b57694e|101cbcd744bc66bf|98181709||t20749.5094418291s|s6124b|6124|rds|local|vector|||1.16||
+model_data|stem||5e42cede622b3e6f|7869383ecd7a71ac|-1204036396||t20749.5108253173s||0|rds|local|vector|||0.06||ℹ In argument: `LGM_glaciated = area_glaciated$LGM_glaciated`. Caused by error: ! Objekt 'area_glaciated' nicht gefunden
+model|stem|9a6e317d07768c2b|11682e51e4c17fab|b2263c6141135f74|808688450||t20749.5154787142s|s17266b|17266|rds|local|vector|||0||
+coordinates_biomes|stem|e7ab8806dd26985b|cf759179b4ea2bf9|91525fff060e0ce0|-192446628||t20749.5186630053s|s6311b|6311|rds|local|vector|||10.1||
+plot_glaciation_biomes|stem|172cb6641846bd0f|cc285adcce8c259f|2c530c1562a7fbd1|2119503143||t20749.5223619368s|s11796b|11796|rds|local|vector|||3.22||
+biomes_glaciation_model|stem|77d69aa3736d9662|11682e51e4c17fab|4496cf11ebb20377|-61360770||t20749.5249622972s|s14250b|14250|rds|local|vector|||0||
+results_model|stem|0c1e9d9618d903e3|e61d45f352d4b1e0|9c16959cdaab50c1|-1956300892||t20749.5249639509s|s412b|412|rds|local|vector|||0.08||
+map_biomes_glaciation|stem|c911d978f3f2da63|55111756512a9245|d000b23977db7011|1324954290||t20749.5309437704s|s162075806b|162075806|rds|local|vector|||0.34||
+load_coordinates|function|236c360689160551
+assign_biomes|function|613e5b767fcf802a
+access_glaciation|function|ebb2fb24502a8a59
+summarize_model|function|b32c59dbffd6789b
+fit_glaciation_model|function|bd66342cc6ae205f
+plot_glaciation_model|function|588f0c43b32d4f9d
+plot_biomes_glaciation|function|d069d08a692be001
+barplot|stem|1c43f1ba8cde70b1|0d98ca7bae7ea4f1|61de550e45c75f9a|-2023799663||t20749.5839745943s|s367180b|367180|rds|local|vector|||0.13||
+manuscript|stem|97344d9d174c0796|7033b830dc219e92|f9db829e90aaff2b|-1793997187|biomes_glaciation_quarto.html*biomes_glaciation_quarto_files*biomes_glaciation_quarto.qmd|t20749.5842035118s|s992269b|992269|file|local|vector|||17.09||

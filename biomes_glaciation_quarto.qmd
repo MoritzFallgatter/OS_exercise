@@ -1,0 +1,45 @@
+---
+title: "OS_exercise"
+format: html
+date: today
+editor: visual
+execute: 
+  echo: false
+---
+
+```{r}
+library(targets)
+
+```
+
+# Introduction
+
+```{r}
+tar_load(coordinates)
+```
+
+In this study, we accessed `r nrow(coordinates)` target regions across the major mountain regions across the world. These target regions can be characterized into biomes, i.e., prevailing climatic conditions, such as arid, temperate, cold and polar regions. However, climatic conditions have been changing over time and so did glacial extents. Here, we want to find out, whether there is a correlation between glacial extent during the LGM and biomes we can find today.
+
+# Methods
+
+## Field methods
+
+Target region coordinates were sampled in turn of the long term monitoring project GLORIA. In the following, biome information was extracted for each target region according to the Köppen-Geiger classification using the biomes package () and merged into four major categories, i.e., arid, temperate, cold and polar. Additionally, glaciation of each target region (yes/no) was accessed using the glacial extent during LGM from the GLACIMONTIS database ( et al, 2026).
+
+## Data Analysis
+
+## Results
+
+```{}
+```
+
+```{r}
+#| label: worldmap
+
+tar_read(map_biomes_glaciation)
+
+#| label: barplot
+tar_read(barplot)
+```
+
+## References
