@@ -1,8 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-\`\`\`
-
 # OS_exercise
 
 <!-- badges: start -->
