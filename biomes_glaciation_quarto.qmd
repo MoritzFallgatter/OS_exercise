@@ -19,17 +19,17 @@ library(targets)
 tar_load(coordinates)
 ```
 
-In this study, we accessed `r nrow(coordinates)` target regions across the major mountain regions across the world. These target regions can be characterized into biomes, i.e., prevailing climatic conditions, such as arid, temperate, cold and polar regions. However, climatic conditions have been changing over time and so did glacial extents. Here, we want to find out, whether there is a correlation between glacial extent during the LGM and biomes we can find today. @
+In this study, we accessed `r nrow(coordinates)` target regions across the major mountain regions across the world. These target regions can be characterized into biomes, i.e., prevailing climatic conditions, such as arid, temperate, cold and polar regions. However, climatic conditions have been changing over time and so did glacial extents. Here, we want to find out, whether there is a correlation between glacial extent during the LGM and biomes we can find today. \@
 
 # Methods
 
 ## Field methods
 
-Target region coordinates were sampled in turn of the long term monitoring project GLORIA @. In the following, biome information was extracted for each target region according to the Köppen-Geiger classification using the biomes package @ and merged into four major categories, i.e., arid, temperate, cold and polar. Additionally, glaciation of each target region (yes/no) was accessed using the glacial extent during LGM from the GLACIMONTIS database @.
+Target region coordinates were sampled in turn of the long term monitoring project GLORIA \@. In the following, biome information was extracted for each target region according to the Köppen-Geiger classification using the biomes package \@ and merged into four major categories, i.e., arid, temperate, cold and polar. Additionally, glaciation of each target region (yes/no) was accessed using the glacial extent during LGM from the GLACIMONTIS database \@.
 
 ## Data Analysis
 
-For statistical analysis, we run a generalized linear model with the formula glaciation (yes/no) \~ biomes, using a binomial function. All analysis were done in R @
+For statistical analysis, we run a generalized linear model with the formula glaciation (yes/no) \~ biomes, using a binomial function. All analysis were done in R \@
 
 ## Results
 
@@ -45,3 +45,15 @@ tar_read(barplot)
 There has been no evidence for a correlation between glaciation of a target region during LGM and present biomes. However, correlation seems to differ between biomes.
 
 ## References
+
+## Noa's feedback
+
+The map is simply [Geilo](https://de.wikipedia.org/wiki/Geilo)
+
+The references are not linked? I'm not sure if I'm simply not seeing it
+
+Everything run smoothly! 
+Only the 2 packages I didn't have installed took a while.
+
+Maybe it's not necessary to have an additional script to run the target library, but it's enough to suggest in the readme to run the commands library(targets) and tar_make() in the console.
+
