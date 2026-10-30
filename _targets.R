@@ -18,38 +18,45 @@ tar_source()
 
 # Replace the target list below with your own:
 list(
+  # load plot coordinates
   tar_target(
     name = coordinates_path,
     command = here("data/GLORIA_mid_coordinates.csv"),
     format = "file"
   ),
   
+  # load spatial extent of LGM
   tar_target(
     name = lgm_path,
     command = here("data/LGM_glaciated_extent_combined.shp"),
     format = "file"
   ),
   
+  # read plot coordinates
   tar_target(
     name = coordinates,
     command = load_coordinates(coordinates_path)
   ),
   
+  # read spatial extent
   tar_target(
     name = lgm_extent,
     command = st_read(lgm_path)
   ),
   
+  # read biomes
   tar_target(
     name = coordinates_biomes,
     command = assign_biomes(coordinates, scheme = 3)
   ),
   
+  # ??
   tar_target(
     name = glaciated_yes_no,
     command = access_glaciation(coordinates, lgm_extent)
   ),
   
+  # fit model
   tar_target(
     name = biomes_glaciation_model,
     command = fit_glaciation_model(
@@ -58,11 +65,13 @@ list(
     )
   ),
   
+  # ??
   tar_target(
     name = results_model,
     command = summarize_model(biomes_glaciation_model)
   ),
-
+  
+  # plot biomes and LGM
   tar_target(
     name = map_biomes_glaciation,
     command = plot_biomes_glaciation(
@@ -71,6 +80,7 @@ list(
     )
   ),
   
+  # plot model
   tar_target(
     name = barplot,
     command = plot_glaciation_model(
@@ -79,7 +89,9 @@ list(
     )
   ),
   
-  tar_quarto(name = manuscript, path = "biomes_glaciation_quarto.qmd")
+  # quarto doc
+  tar_quarto(name = manuscript, 
+             path = "biomes_glaciation_quarto.qmd")
 )
 
 
