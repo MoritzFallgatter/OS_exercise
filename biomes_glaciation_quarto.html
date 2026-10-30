@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-10-23">
+<meta name="dcterms.date" content="2026-10-25">
 
 <title>OS_exercise</title>
 <style>
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="biomes_glaciation_quarto_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="biomes_glaciation_quarto_files/libs/quarto-html/anchor.min.js"></script>
 <link href="biomes_glaciation_quarto_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="biomes_glaciation_quarto_files/libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="biomes_glaciation_quarto_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="biomes_glaciation_quarto_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="biomes_glaciation_quarto_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="biomes_glaciation_quarto_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="biomes_glaciation_quarto_files/libs/bootstrap/bootstrap-0a795aa4b34868e092d2e0fe1a97b306.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 23, 2026</p>
+      <p class="date">October 25, 2026</p>
     </div>
   </div>
   
@@ -78,22 +78,20 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>In this study, we accessed 129 target regions across the major mountain regions across the world. These target regions can be characterized into biomes, i.e., prevailing climatic conditions, such as arid, temperate, cold and polar regions. However, climatic conditions have been changing over time and so did glacial extents. Here, we want to find out, whether there is a correlation between glacial extent during the LGM and biomes we can find today.</p>
+<p>In this study, we accessed 129 target regions across the major mountain regions across the world. These target regions can be characterized into biomes, i.e., prevailing climatic conditions, such as arid, temperate, cold and polar regions. However, climatic conditions have been changing over time and so did glacial extents. Here, we want to find out, whether there is a correlation between glacial extent during the LGM and biomes we can find today. @</p>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
 <section id="field-methods" class="level2">
 <h2 class="anchored" data-anchor-id="field-methods">Field methods</h2>
-<p>Target region coordinates were sampled in turn of the long term monitoring project GLORIA. In the following, biome information was extracted for each target region according to the Köppen-Geiger classification using the biomes package () and merged into four major categories, i.e., arid, temperate, cold and polar. Additionally, glaciation of each target region (yes/no) was accessed using the glacial extent during LGM from the GLACIMONTIS database <span class="citation" data-cites="Lima">(<a href="#ref-Lima" role="doc-biblioref"><strong>Lima?</strong></a>)</span>.</p>
+<p>Target region coordinates were sampled in turn of the long term monitoring project GLORIA @. In the following, biome information was extracted for each target region according to the Köppen-Geiger classification using the biomes package @ and merged into four major categories, i.e., arid, temperate, cold and polar. Additionally, glaciation of each target region (yes/no) was accessed using the glacial extent during LGM from the GLACIMONTIS database @.</p>
 </section>
 <section id="data-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
-<p>For statistical analysis, we run a generalized linear model with this formula:</p>
-<p>$$$$\mathrm{glaciation (yes/no) \rightleftharpoons biomes}}$$</p>
+<p>For statistical analysis, we run a generalized linear model with the formula glaciation (yes/no) ~ biomes, using a binomial function. All analysis were done in R @</p>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
-<pre><code></code></pre>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -110,9 +108,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>There has been no evidence for a correlation between glaciation of a target region during LGM and present biomes. However, correlation seems to differ between biomes.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
+</section>
+<section id="noas-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="noas-feedback">Noa’s feedback</h2>
+<p>The map is simply <a href="https://de.wikipedia.org/wiki/Geilo">Geilo</a></p>
 </section>
 </section>
 
