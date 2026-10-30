@@ -38,25 +38,25 @@ list(
     command = load_coordinates(coordinates_path)
   ),
   
-  # read spatial extent
+  # read load spatial extent of LGM
   tar_target(
     name = lgm_extent,
     command = st_read(lgm_path)
   ),
   
-  # read biomes
+  # biomes
   tar_target(
     name = coordinates_biomes,
     command = assign_biomes(coordinates, scheme = 3)
   ),
   
-  # ??
+  # glaciation status
   tar_target(
     name = glaciated_yes_no,
     command = access_glaciation(coordinates, lgm_extent)
   ),
   
-  # fit model
+  # glaciation~biomes model
   tar_target(
     name = biomes_glaciation_model,
     command = fit_glaciation_model(
@@ -65,7 +65,7 @@ list(
     )
   ),
   
-  # ??
+  # models parameters
   tar_target(
     name = results_model,
     command = summarize_model(biomes_glaciation_model)
